@@ -1,0 +1,9 @@
+<% flash.each do |name, msg| %>
+  <div class='flash'><%= msg %></div>
+<% end %>
+
+<% if session['session_msg'] %>
+  Session message: <%= session['session_msg'] %>
+<% end %>
+
+<h1><%= @message_text %></h1>
